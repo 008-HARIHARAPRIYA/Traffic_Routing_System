@@ -1,0 +1,125 @@
+.chatbot-bg {
+  min-height: 100vh;
+  background: radial-gradient(circle at 70% 20%, #e8e3fc 0, #fff 70%);
+  font-family: 'Inter', 'Arial', sans-serif;
+
+  /* Flex center content */
+  display: flex;
+  justify-content: center;   /* horizontal center */
+  align-items: center;       /* vertical center */
+  flex-direction: column;
+  padding: 20px;             /* optional padding */
+  box-sizing: border-box;    /* to include padding in size */
+}
+
+.chatbot-container {
+  max-width: 720px;
+  width: 100%;
+}
+
+/* Top nav bar */
+.chatbot-topbar {
+  background: #222;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 32px;
+  height: 50px;
+  border-radius: 0 0 10px 10px;
+}
+
+.chatbot-brand {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.chatbot-nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 1rem;
+}
+
+.chatbot-main {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Heading */
+.chatbot-title {
+  font-weight: 700;
+  font-size: 2.3em;
+  opacity: 0.85;
+  margin-bottom: 16px;
+  margin-top: 18px;
+  letter-spacing: .02em;
+}
+
+/* Chat window */
+.chatbot-chatwindow {
+  width: 100%;
+  max-width: 680px;
+  margin: 40px auto 0 auto;
+  padding: 32px;
+  background: linear-gradient(180deg,#fff, #faf7ff 80%, #f3e8ff 100%);
+  border-radius: 24px;
+  box-shadow: 0 2px 16px rgba(70,50,140,0.06);
+}
+
+/* Bubble styles */
+.chatbot-bubble {
+  display: flex;
+  margin-bottom: 10px;
+  max-width: 65%;
+  padding: 12px 18px;
+  border-radius: 14px;
+  font-size: 1rem;
+  color: #222;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  word-break: break-word;
+}
+
+.chatbot-bubble-user {
+  background: #f3e8ff;
+  align-self: flex-end;
+  margin-left: auto;
+  justify-content: flex-end;
+}
+
+.chatbot-bubble-ai {
+  background: #f8fbfd;
+  align-self: flex-start;
+  margin-right: auto;
+  justify-content: flex-start;
+}
+
+/* Input row at bottom */
+.chatbot-inputrow {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 1px 4px #ddd;
+  padding: 6px 8px;
+  margin-top: 8px;
+}
+
+.chatbot-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 12px;
+  background: transparent;
+  font-size: 1rem;
+  color: #222;
+}
+
+.chatbot-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 7px 18px;
+  font-size: 1.7em;
+  color: #333;
+}

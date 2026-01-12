@@ -1,0 +1,97 @@
+
+/* Hero */
+.hero {
+  height: 80vh;
+  position: relative;
+  background: url('https://cdn.pixabay.com/photo/2023/03/17/16/41/traffic-7859033_1280.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(128,128,128,0.5); /* greyish overlay */
+  z-index: 1;
+}
+
+.overlay-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  max-width: 600px;
+}
+
+.overlay-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.overlay-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.get-started {
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.8rem;
+  background: #00d4ff;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.get-started:hover {
+  background: #009bbf;
+}
+
+/* Footer */
+.footer {
+  background: #111;
+  color: white;
+  padding: 2rem;
+}
+
+.features {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.features li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem 1rem;
+  font-weight: bold;
+  color: #00d4ff;
+}
+
+.features li img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Divider line */
+.footer hr {
+  border: 0;
+  border-top: 1px solid #444;
+  margin: 1rem 0;
+}
+
+.footer-info {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #ccc;
+}

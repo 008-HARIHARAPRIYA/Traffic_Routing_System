@@ -1,0 +1,55 @@
+/* Reset */
+body, html, #root, .app {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: black;
+  color: white;
+  position: fixed; /* or sticky */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin-left: auto;
+}
+
+/* Nav list items */
+.nav-links li {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+/* Nav anchors styling for white links */
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Nav anchors hover color */
+.nav-links a:hover {
+  color: #00d4ff;
+}
+
+.theme-toggle {
+  margin-left: 1rem;
+  cursor: pointer;
+}
